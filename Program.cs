@@ -36,11 +36,6 @@ app.UseAuthorization();
 app.MapStaticAssets();
 
 app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
-    .WithStaticAssets();
-
-app.MapControllerRoute(
     name: "Admindashboard",
     pattern: "{controller=Admin}/{action=Index}/{id?}")
     .WithStaticAssets();
@@ -53,6 +48,11 @@ app.MapControllerRoute(
 app.MapControllerRoute(
     name: "Staffdashboard",
     pattern: "{controller=Staff}/{action=Index}/{id?}")
+    .WithStaticAssets();
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
 
 app.MapRazorPages()

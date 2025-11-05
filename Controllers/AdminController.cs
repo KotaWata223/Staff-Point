@@ -4,11 +4,11 @@ using Staff_Point.Models;
 
 namespace Staff_Point.Controllers
 {
-    public class HomeController : Controller
+    public class AdminController : Controller
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public AdminController(ILogger<HomeController> logger)
         {
             _logger = logger;
         }
