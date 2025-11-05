@@ -6,3 +6,118 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Staff Point</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: "Segoe UI", "Hiragino Kaku Gothic ProN", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #fff;
+      padding: 16px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .card {
+      background-color: #fff;
+      margin: 12px;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .card h2 {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+    .card p {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0;
+    }
+    .chart {
+      text-align: center;
+      margin-top: 12px;
+    }
+    .nav {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #fff;
+      display: flex;
+      justify-content: space-around;
+      padding: 8px 0;
+      box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+    }
+    .nav-item {
+      text-align: center;
+      font-size: 12px;
+      color: #333;
+    }
+    .nav-item i {
+      font-size: 20px;
+      display: block;
+      margin-bottom: 4px;
+    }
+  </style>
+  <!-- アイコン用（Font Awesome） -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>Staff Point</header>
+  
+  <div class="card">
+    <h2>参加者数</h2>
+    <p>120名</p>
+    <small>申込数：150名</small>
+  </div>
+
+  <div class="card">
+    <h2>学生スタッフ数</h2>
+    <p>24名</p>
+    <small>予定：30名</small>
+  </div>
+
+  <div class="card">
+    <h2>交通費申請者</h2>
+    <p>28名</p>
+  </div>
+
+  <div class="card chart">
+    <h2>学科別参加者分</h2>
+    <img src="https://via.placeholder.com/200x150.png?text=Pie+Chart" alt="円グラフ">
+  </div>
+  <div class="nav">
+    <div class="nav-item">
+      <i class="fas fa-home"></i>
+      ホーム
+    </div>
+    <div class="nav-item">
+      <i class="fas fa-history"></i>
+      参加者一覧
+    </div>
+    <div class="nav-item">
+      <i class="fas fa-book"></i>
+      QR
+    </div>
+    <div class="nav-item">
+      <i class="fas fa-sign-out-alt"></i>
+      マイページ
+    </div>
+  </div>
+
+</body>
+</html>
