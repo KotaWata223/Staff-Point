@@ -40,6 +40,21 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
 
+app.MapControllerRoute(
+    name: "Admindashboard",
+    pattern: "{controller=Admin}/{action=Index}/{id?}")
+    .WithStaticAssets();
+
+app.MapControllerRoute(
+    name: "LIFFdashboard",
+    pattern: "{controller=LIFF}/{action=Index}/{id?}")
+    .WithStaticAssets();
+
+app.MapControllerRoute(
+    name: "Staffdashboard",
+    pattern: "{controller=Staff}/{action=Index}/{id?}")
+    .WithStaticAssets();
+
 app.MapRazorPages()
    .WithStaticAssets();
 
