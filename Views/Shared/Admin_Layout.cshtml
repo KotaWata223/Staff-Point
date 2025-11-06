@@ -12,11 +12,21 @@
   <aside class="sidebar">
     <h2>Staff Point</h2>
     <ul>
-      <li>ホーム</li>
-      <li>参加者一覧</li>
-      <li>データ登録</li>
-      <li>学生スタッフ一覧</li>
-      <li>アカウント管理</li>
+      <li>
+          <a class="nav-text" asp-controller="Admin" asp-action="Index">ホーム</a>
+      </li>
+      <li>
+          <a class="nav-text" asp-controller="Admin" asp-action="Participants">参加者一覧</a>
+      </li>
+      <li>
+          <a class="nav-text" asp-controller="Admin" asp-action="Student_Staff">学生スタッフ一覧</a>
+      </li>
+      <li>
+          <a class="nav-text" asp-controller="Admin" asp-action="Data_Registration">データ登録</a>
+      </li>
+      <li>
+          <a class="nav-text" asp-controller="Admin" asp-action="Account_Manage">アカウント管理</a>
+      </li>
       <li style="margin-top: 32px;">ログアウト</li>
     </ul>
   </aside>

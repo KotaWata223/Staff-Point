@@ -18,7 +18,19 @@ namespace Staff_Point.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Student_Staff()
+        {
+            return View();
+        }
+        public IActionResult Account_Manage()
+        {
+            return View();
+        }
+        public IActionResult Data_Registration()
+        {
+            return View();
+        }
+        public IActionResult Participants()
         {
             return View();
         }
