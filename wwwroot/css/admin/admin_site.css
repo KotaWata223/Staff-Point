@@ -19,6 +19,7 @@ body {
     background-color: #0066cc;
     color: white;
     padding: 20px;
+    position:relative;
 }
 
     .sidebar h2 {
@@ -54,6 +55,7 @@ body {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
 }
 
     .header h1 {
