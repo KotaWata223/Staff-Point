@@ -7,40 +7,36 @@
   <meta charset="UTF-8">
   <title>Staff Point - OC概要</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="~/css/admin/admin-index.css"/>
+  <link rel="stylesheet" href="~/css/admin/student_staff.css"/>
+  <link rel="stylesheet" href="~/css/admin/account_manage.css"/>
 </head>
-<body>
-
-      <div class="grid">
-        <div id="" class="card">
-          <h2>基本情報</h2>
-          <p>参加者数：35名</p>
-          <p>学生スタッフ数：18名</p>
-          <p>交通費申請者数：10名</p>
-          <p>同伴者数合計：8名</p>
-        </div>
-
-        <div class="card">
-          <h2>学科別参加者分布</h2>
-          <p>国際文化学科：10人</p>
-          <p>観光学科：10人</p>
-          <p>経営学科：10人</p>
-          <p>公共経営学科：10人</p>
-          <p>福祉心理学科：10人</p>
-          <p>保育児童学科：10人</p>
-          <p>看護学科：10人</p>
-        </div>
-
-        <div class="card">
-          <h2>パン配布数</h2>
-          <p>国際文化学科：10個</p>
-          <p>観光学科：10個</p>
-          <p>経営学科：10個</p>
-          <p>公共経営学科：10個</p>
-          <p>福祉心理学科：10個</p>
-          <p>保育児童学科：10個</p>
-          <p>看護学科：10個</p>
-        </div>
-      </div>
+  <body>
+    <h1>アカウント管理</h1>
+    <button class="filter_btn">フィルター</button>
+    <button class="add_account_btn">アカウント追加</button>
+      <div class="table-container">    
+  <table>
+    <thead class="table-header">
+      <tr>
+        <th>名前</th>
+        <th>メールアドレス</th>
+        <th>所属</th>
+        <th>権限</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>渡辺 晃太朗</td>
+        <td>test@email.com</td>
+        <td>情報システム工学科4年制</td>
+        <td>admin</td>
+        <td><button class="control_btn">：</button></td>
+      </tr>
+      
+      <!-- 他の参加者も同様に追加 -->
+    </tbody>
+  </table>
+  </div>
 </body>
 </html>
