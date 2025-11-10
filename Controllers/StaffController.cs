@@ -18,7 +18,22 @@ namespace Staff_Point.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Participants()
+        {
+            return View();
+        }
+
+        public IActionResult QR_reader()
+        {
+            return View();
+        }
+
+        public IActionResult Staff_list()
+        {
+            return View();
+        }
+
+        public IActionResult Mypage()
         {
             return View();
         }
