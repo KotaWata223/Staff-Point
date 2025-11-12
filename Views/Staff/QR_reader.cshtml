@@ -7,7 +7,7 @@
   <meta charset="UTF-8">
   <title>Staff Point</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../css/Staff/staff_index.css">
+  <link rel="stylesheet" href="../css/Staff/qr_reader.css">
   <style>
    
   </style>
@@ -16,30 +16,31 @@
 </head>
 <body>
 
-  <h2 class="oc_about">12/20 冬OC概要</h2>
-  <div class="layout">
-  <div class="card">
-    <h2>参加者数</h2>
-    <p>120名</p>
-    
-  </div>
+  <h2 class="page_about">QRコードスキャン</h2>
+<div class="camera-wrapper">
+  <video id="camera" autoplay playsinline></video>
+  <div class="scan-box"></div>
+</div>
+<p id="status">カメラを起動中...</p>
 
-  <div class="card">
-    <h2>学生スタッフ数</h2>
-    <p>24名</p>
-    
-  </div>
+<script>
+  const video = document.getElementById("camera");
+  const statusText = document.getElementById("status");
 
-  <div class="card">
-    <h2>交通費申請者数</h2>
-    <p>28名</p>
-  </div>
-  <div class="card">
-    <h2>同伴者数合計</h2>
-    <p>2名</p>
-  </div>
-  
-  </div>
+  // カメラ起動
+  navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" } })
+    .then(stream => {
+      video.srcObject = stream;
+      statusText.textContent = "カメラ起動中（スキャン準備完了）";
+    })
+    .catch(err => {
+      console.error("カメラ起動エラー:", err);
+      statusText.textContent = "カメラの起動に失敗しました。";
+    });
+</script>
+ <script src="https://unpkg.com/html5-qrcode"></script>
+
+
 
 </body>
 </html>
