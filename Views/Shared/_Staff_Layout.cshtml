@@ -1,0 +1,38 @@
+﻿
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Staff Point</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/Staff/staff_site.css"/>
+</head>
+<body>
+
+  <header>Staff Point</header>
+
+  <main>
+      @RenderBody()
+  </main>
+  
+  <div class="nav">
+    <div class="nav-item">
+      <a class="nav-text" asp-controller="Staff" asp-action="Index">ホーム</a>
+    </div>
+    <div class="nav-item">
+      <a class="nav-text" asp-controller="Staff" asp-action="Participants">参加者一覧</a>
+    </div>
+    <div class="nav-item">
+      <a class="nav-text" asp-controller="Staff" asp-action="QR_reader">QR</a>
+    </div>
+    <div class="nav-item">
+      <a class="nav-text" asp-controller="Staff" asp-action="Staff_list">スタッフ一覧</a>
+    </div>
+    <div class="nav-item">
+      <a class="nav-text" asp-controller="Staff" asp-action="Mypage">マイページ</a>
+    </div>
+  </div>
+  </div>
+
+</body>
+</html>

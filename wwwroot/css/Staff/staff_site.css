@@ -8,11 +8,17 @@ body {
 
 header {
     background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
     padding: 16px;
     text-align: center;
     font-size: 20px;
     font-weight: bold;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+main {
+    padding-top: 64px;
 }
 .nav {
     position: fixed;

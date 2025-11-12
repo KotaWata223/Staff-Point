@@ -1,0 +1,46 @@
+﻿@{
+    Layout="~/Views/Shared/_Staff_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Staff Point</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/Staff/qr_reader.css">
+  <style>
+   
+  </style>
+  <!-- アイコン用（Font Awesome） -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <h2 class="page_about">QRコードスキャン</h2>
+<div class="camera-wrapper">
+  <video id="camera" autoplay playsinline></video>
+  <div class="scan-box"></div>
+</div>
+<p id="status">カメラを起動中...</p>
+
+<script>
+  const video = document.getElementById("camera");
+  const statusText = document.getElementById("status");
+
+  // カメラ起動
+  navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" } })
+    .then(stream => {
+      video.srcObject = stream;
+      statusText.textContent = "カメラ起動中（スキャン準備完了）";
+    })
+    .catch(err => {
+      console.error("カメラ起動エラー:", err);
+      statusText.textContent = "カメラの起動に失敗しました。";
+    });
+</script>
+ <script src="https://unpkg.com/html5-qrcode"></script>
+
+
+
+</body>
+</html>

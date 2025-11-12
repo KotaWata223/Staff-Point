@@ -1,0 +1,31 @@
+.oc_about {
+    text-align: center;
+}
+
+.layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #fff;
+    width: 150px;
+    height: 150px;
+    margin: 12px;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+    .card h2 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .card p {
+        font-size: 40px;
+        font-weight: bold;
+        margin: 0;
+    }
