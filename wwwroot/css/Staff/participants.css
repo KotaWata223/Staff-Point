@@ -1,0 +1,60 @@
+.oc_about {
+    text-align: center;
+}
+
+.layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 20px;
+}
+
+.participant-card {
+    display: flex;
+    width: 390px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.label {
+    width: 25px;
+    flex-shrink: 0;
+}
+
+    .label.grade-repeat {
+        background-color: #5864ff;
+    }
+    /* 1年 */
+    .label.grade-2 {
+        background-color: #ff6666;
+    }
+    /* 2年 */
+    .label.grade-3 {
+        background-color: #66cc99;
+    }
+    /* 3年 */
+/* 学生スタッフなど */
+
+.card-content {
+    padding: 16px;
+    flex-grow: 1;
+}
+
+    .card-content h3 {
+        margin: 0 0 8px;
+        font-size: 18px;
+    }
+
+    .card-content p {
+        margin: 4px 0;
+        font-size: 14px;
+        color: #555;
+    }
